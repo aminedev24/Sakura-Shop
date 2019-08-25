@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+<meta charset="utf-8">
+<title>sakura-shop.dz: The Best Deals Online</title>
+<style>
+  
+   
+    
+    .topnav {
+    background-color: dimgray;
+    overflow: hidden;
+    width: 100%;    
+   line-height: 35px;
+ margin: 0 auto;
+
+    }
+    
+    
+    
+    .topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+    
+    }
+    
+    .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+    }
+    
+    
+    .topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+    }
+    
+      
+    
+   
+    .tab {
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: #f1f1f1;
+            
+}
+ 
+    .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+    }
+.tab button:hover {
+background-color: navy;
+    }
+    
+    .tab button.active {
+  background-color: green;
+}
+
+    .tabcontent {
+  display:none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+    body{
+    margin: 0;
+    padding: 0;
+    
+      
+    } 
+    .logo img {
+        position:sticky;
+        text-align: left;
+        left: 80%;
+        
+        
+    }
+    .linkbar {
+    position:relative;
+    top:30%;
+    right: 5%;
+    left:3%;    
+    }
+    
+    
+</style>
+    
+</head>
+<body>
+    
+    
+    
+   
+<nav>
+    
+   <div class="topnav">
+<div class="logo">  <a href="sakura.htm"><img border="0" alt="home" src="sakura.png" height="75" width="300"></a>
+    </div> 
+    
+<div class="linkbar">
+<a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="contact.htm">Contact</a>
+  <a href="about.htm">About</a>
+       </div>
+       </div>
+    </nav>
+
+
+    <h2>welcome to our website!</h2>  
+    <p><em>here you can find diffrent brand and clothing styles</em> </p>
+    
+    
+    <h2>Products</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Shoes')">Shoes</button>
+  <button class="tablinks" onclick="openCity(event, 'Shirts')">Shirts</button>
+  <button class="tablinks" onclick="openCity(event, 'Bags')">Bags</button>
+</div>
+
+<div id="Shoes" class="tabcontent">
+  <h3>Shoes</h3>
+  <p>browse your favorite shoes.</p>
+</div>
+
+<div id="Shirts" class="tabcontent">
+  <h3>Shirts</h3>
+  <p>choose your favorite shirts.</p> 
+</div>
+
+<div id="Bags" class="tabcontent">
+  <h3>bags</h3>
+  <p>Pick your favorate bag.</p>
+</div>
+
+
+    
+    
+    <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+    
+ </body>
+</html>
